@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		A33F919F2273D31400E47820 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33F919D2273D31400E47820 /* MainMenu.xib */; };
 		A33F91AB2273D31400E47820 /* Pixel_Art_ResizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F91AA2273D31400E47820 /* Pixel_Art_ResizerTests.swift */; };
 		A33F91B62273D31400E47820 /* Pixel_Art_ResizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F91B52273D31400E47820 /* Pixel_Art_ResizerUITests.swift */; };
+		A33F91C52273E21B00E47820 /* Sheet Conveniences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F91C42273E21B00E47820 /* Sheet Conveniences.swift */; };
+		A33F91CA2274014C00E47820 /* PixelArtKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33F91C92274014C00E47820 /* PixelArtKit.framework */; };
+		A3413DF42274D40D00E5E17B /* PixelArtKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A33F91C92274014C00E47820 /* PixelArtKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3413DFF2275686400E5E17B /* URL Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3413DFE2275686400E5E17B /* URL Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A3413DF32274D3FE00E5E17B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A3413DF42274D40D00E5E17B /* PixelArtKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A33F91912273D31300E47820 /* Pixel Art Resizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pixel Art Resizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33F91942273D31300E47820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,13 +58,17 @@
 		A33F919B2273D31400E47820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A33F919E2273D31400E47820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A33F91A02273D31400E47820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A33F91A12273D31400E47820 /* Pixel_Art_Resizer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pixel_Art_Resizer.entitlements; sourceTree = "<group>"; };
 		A33F91A62273D31400E47820 /* Pixel Art ResizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pixel Art ResizerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33F91AA2273D31400E47820 /* Pixel_Art_ResizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixel_Art_ResizerTests.swift; sourceTree = "<group>"; };
 		A33F91AC2273D31400E47820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A33F91B12273D31400E47820 /* Pixel Art ResizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pixel Art ResizerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33F91B52273D31400E47820 /* Pixel_Art_ResizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixel_Art_ResizerUITests.swift; sourceTree = "<group>"; };
 		A33F91B72273D31400E47820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A33F91C32273D31F00E47820 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A33F91C42273E21B00E47820 /* Sheet Conveniences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sheet Conveniences.swift"; sourceTree = "<group>"; };
+		A33F91C92274014C00E47820 /* PixelArtKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PixelArtKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33F91CD22740FC300E47820 /* Pixel Art Resizer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pixel Art Resizer.entitlements"; sourceTree = "<group>"; };
+		A3413DFE2275686400E5E17B /* URL Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL Operators.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A33F91CA2274014C00E47820 /* PixelArtKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +100,17 @@
 		A33F91882273D31300E47820 = {
 			isa = PBXGroup;
 			children = (
+				A33F91C32273D31F00E47820 /* README.md */,
 				A33F91932273D31300E47820 /* Pixel Art Resizer */,
 				A33F91A92273D31400E47820 /* Pixel Art ResizerTests */,
 				A33F91B42273D31400E47820 /* Pixel Art ResizerUITests */,
 				A33F91922273D31300E47820 /* Products */,
+				A33F91C82274014C00E47820 /* Frameworks */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
 		};
 		A33F91922273D31300E47820 /* Products */ = {
 			isa = PBXGroup;
@@ -98,13 +125,9 @@
 		A33F91932273D31300E47820 /* Pixel Art Resizer */ = {
 			isa = PBXGroup;
 			children = (
-				A33F91942273D31300E47820 /* AppDelegate.swift */,
-				A33F91962273D31300E47820 /* Document.swift */,
-				A33F91982273D31300E47820 /* Document.xib */,
-				A33F919B2273D31400E47820 /* Assets.xcassets */,
-				A33F919D2273D31400E47820 /* MainMenu.xib */,
-				A33F91A02273D31400E47820 /* Info.plist */,
-				A33F91A12273D31400E47820 /* Pixel_Art_Resizer.entitlements */,
+				A3C98FD522768828007FC8F7 /* GUI */,
+				A3C98FD622768835007FC8F7 /* Utilities */,
+				A3C98FD722768841007FC8F7 /* Resources */,
 			);
 			path = "Pixel Art Resizer";
 			sourceTree = "<group>";
@@ -127,6 +150,52 @@
 			path = "Pixel Art ResizerUITests";
 			sourceTree = "<group>";
 		};
+		A33F91C82274014C00E47820 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A33F91C92274014C00E47820 /* PixelArtKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3C98FD42276881A007FC8F7 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				A33F91982273D31300E47820 /* Document.xib */,
+				A33F919D2273D31400E47820 /* MainMenu.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		A3C98FD522768828007FC8F7 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				A33F91942273D31300E47820 /* AppDelegate.swift */,
+				A33F91962273D31300E47820 /* Document.swift */,
+				A3C98FD42276881A007FC8F7 /* XIBs */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		A3C98FD622768835007FC8F7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A3413DFE2275686400E5E17B /* URL Operators.swift */,
+				A33F91C42273E21B00E47820 /* Sheet Conveniences.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A3C98FD722768841007FC8F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A33F91CD22740FC300E47820 /* Pixel Art Resizer.entitlements */,
+				A33F919B2273D31400E47820 /* Assets.xcassets */,
+				A33F91A02273D31400E47820 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +206,7 @@
 				A33F918D2273D31300E47820 /* Sources */,
 				A33F918E2273D31300E47820 /* Frameworks */,
 				A33F918F2273D31300E47820 /* Resources */,
+				A3413DF32274D3FE00E5E17B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -191,10 +261,18 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = "Ben Leggiero";
+				ORGANIZATIONNAME = "Blue Husky Studios";
 				TargetAttributes = {
 					A33F91902273D31300E47820 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					A33F91A52273D31400E47820 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -207,7 +285,7 @@
 				};
 			};
 			buildConfigurationList = A33F918C2273D31300E47820 /* Build configuration list for PBXProject "Pixel Art Resizer" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -258,6 +336,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3413DFF2275686400E5E17B /* URL Operators.swift in Sources */,
+				A33F91C52273E21B00E47820 /* Sheet Conveniences.swift in Sources */,
 				A33F91972273D31300E47820 /* Document.swift in Sources */,
 				A33F91952273D31300E47820 /* AppDelegate.swift in Sources */,
 			);
@@ -321,7 +401,6 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -349,6 +428,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 26V9MK8TGP;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -359,6 +439,9 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -372,6 +455,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 			};
 			name = Debug;
 		};
@@ -379,10 +463,180 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_OPTIMIZATION = time;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 26V9MK8TGP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+			};
+			name = Release;
+		};
+		A33F91BB2273D31400E47820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Pixel Art Resizer/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.benleggiero.Pixel-Art-Resizer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A33F91BC2273D31400E47820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Pixel Art Resizer/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.benleggiero.Pixel-Art-Resizer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A33F91BE2273D31400E47820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = "Pixel Art ResizerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.benleggiero.Pixel-Art-ResizerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pixel Art Resizer.app/Contents/MacOS/Pixel Art Resizer";
+			};
+			name = Debug;
+		};
+		A33F91BF2273D31400E47820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = "Pixel Art ResizerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.benleggiero.Pixel-Art-ResizerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pixel Art Resizer.app/Contents/MacOS/Pixel Art Resizer";
+			};
+			name = Release;
+		};
+		A33F91C12273D31400E47820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = "Pixel Art ResizerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.benleggiero.Pixel-Art-ResizerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Pixel Art Resizer";
+			};
+			name = Debug;
+		};
+		A33F91C22273D31400E47820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = "Pixel Art ResizerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.benleggiero.Pixel-Art-ResizerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Pixel Art Resizer";
+			};
+			name = Release;
+		};
+		A3413DF72275632800E5E17B /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_OPTIMIZATION = time;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -410,10 +664,15 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 26V9MK8TGP;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -426,18 +685,16 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 			};
-			name = Release;
+			name = Production;
 		};
-		A33F91BB2273D31400E47820 /* Debug */ = {
+		A3413DF82275632800E5E17B /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Pixel Art Resizer/Pixel_Art_Resizer.entitlements";
-				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 26V9MK8TGP;
-				INFOPLIST_FILE = "Pixel Art Resizer/Info.plist";
+				INFOPLIST_FILE = "Pixel Art Resizer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -446,35 +703,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
-			name = Debug;
+			name = Production;
 		};
-		A33F91BC2273D31400E47820 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Pixel Art Resizer/Pixel_Art_Resizer.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 26V9MK8TGP;
-				INFOPLIST_FILE = "Pixel Art Resizer/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.benleggiero.Pixel-Art-Resizer";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		A33F91BE2273D31400E47820 /* Debug */ = {
+		A3413DF92275632800E5E17B /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 26V9MK8TGP;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "Pixel Art ResizerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -486,36 +723,14 @@
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pixel Art Resizer.app/Contents/MacOS/Pixel Art Resizer";
 			};
-			name = Debug;
+			name = Production;
 		};
-		A33F91BF2273D31400E47820 /* Release */ = {
+		A3413DFA2275632800E5E17B /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 26V9MK8TGP;
-				INFOPLIST_FILE = "Pixel Art ResizerTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.benleggiero.Pixel-Art-ResizerTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pixel Art Resizer.app/Contents/MacOS/Pixel Art Resizer";
-			};
-			name = Release;
-		};
-		A33F91C12273D31400E47820 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 26V9MK8TGP;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "Pixel Art ResizerUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,27 +742,7 @@
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "Pixel Art Resizer";
 			};
-			name = Debug;
-		};
-		A33F91C22273D31400E47820 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 26V9MK8TGP;
-				INFOPLIST_FILE = "Pixel Art ResizerUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.benleggiero.Pixel-Art-ResizerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Pixel Art Resizer";
-			};
-			name = Release;
+			name = Production;
 		};
 /* End XCBuildConfiguration section */
 
@@ -557,36 +752,40 @@
 			buildConfigurations = (
 				A33F91B82273D31400E47820 /* Debug */,
 				A33F91B92273D31400E47820 /* Release */,
+				A3413DF72275632800E5E17B /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 		A33F91BA2273D31400E47820 /* Build configuration list for PBXNativeTarget "Pixel Art Resizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A33F91BB2273D31400E47820 /* Debug */,
 				A33F91BC2273D31400E47820 /* Release */,
+				A3413DF82275632800E5E17B /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 		A33F91BD2273D31400E47820 /* Build configuration list for PBXNativeTarget "Pixel Art ResizerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A33F91BE2273D31400E47820 /* Debug */,
 				A33F91BF2273D31400E47820 /* Release */,
+				A3413DF92275632800E5E17B /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 		A33F91C02273D31400E47820 /* Build configuration list for PBXNativeTarget "Pixel Art ResizerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A33F91C12273D31400E47820 /* Debug */,
 				A33F91C22273D31400E47820 /* Release */,
+				A3413DFA2275632800E5E17B /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Production;
 		};
 /* End XCConfigurationList section */
 	};

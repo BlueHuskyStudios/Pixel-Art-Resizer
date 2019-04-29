@@ -3,7 +3,7 @@
 //  Pixel Art Resizer
 //
 //  Created by Ben Leggiero on 4/26/19.
-//  Copyright © 2019 Ben Leggiero. All rights reserved.
+//  Copyright © 2019 Blue Husky Studios BH-1-PS
 //
 
 import Cocoa
@@ -22,5 +22,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
 
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
+    }
 }
 
