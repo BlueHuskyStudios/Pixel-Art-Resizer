@@ -18,6 +18,7 @@
 		A33F91CA2274014C00E47820 /* PixelArtKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33F91C92274014C00E47820 /* PixelArtKit.framework */; };
 		A3413DF42274D40D00E5E17B /* PixelArtKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A33F91C92274014C00E47820 /* PixelArtKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A3413DFF2275686400E5E17B /* URL Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3413DFE2275686400E5E17B /* URL Operators.swift */; };
+		A3FDC96D2293AA47004C45C2 /* PRIVACY POLICY.md in Resources */ = {isa = PBXBuildFile; fileRef = A3FDC96C2293AA47004C45C2 /* PRIVACY POLICY.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		A33F91C92274014C00E47820 /* PixelArtKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PixelArtKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33F91CD22740FC300E47820 /* Pixel Art Resizer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pixel Art Resizer.entitlements"; sourceTree = "<group>"; };
 		A3413DFE2275686400E5E17B /* URL Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL Operators.swift"; sourceTree = "<group>"; };
+		A3FDC96C2293AA47004C45C2 /* PRIVACY POLICY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = "PRIVACY POLICY.md"; path = "../../PRIVACY POLICY.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		A3C98FD722768841007FC8F7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A3FDC96C2293AA47004C45C2 /* PRIVACY POLICY.md */,
 				A33F91CD22740FC300E47820 /* Pixel Art Resizer.entitlements */,
 				A33F919B2273D31400E47820 /* Assets.xcassets */,
 				A33F91A02273D31400E47820 /* Info.plist */,
@@ -311,6 +314,7 @@
 			files = (
 				A33F919C2273D31400E47820 /* Assets.xcassets in Resources */,
 				A33F919A2273D31300E47820 /* Document.xib in Resources */,
+				A3FDC96D2293AA47004C45C2 /* PRIVACY POLICY.md in Resources */,
 				A33F919F2273D31400E47820 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
