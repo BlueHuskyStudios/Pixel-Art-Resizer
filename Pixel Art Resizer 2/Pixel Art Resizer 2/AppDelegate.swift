@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Pixel Art Resizer 2
 //
-//  Created by Ben Leggiero on 6/16/19.
+//  Created by Ben Leggiero on 2019-07-01.
 //  Copyright © 2019 Ben Leggiero. All rights reserved.
 //
 
