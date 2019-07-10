@@ -9,11 +9,20 @@
 import SwiftUI
 
 struct ContentView : View {
+    init() { // for navigation bar title color
+//        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.red]
+        // For navigation bar background color
+//        UINavigationBar.appearance().backgroundColor = .green
+    }
+
     var body: some View {
-        VStack {
-            Text("Top Placeholder")
-            Spacer()
-            Text("Bottom Placeholder")
+        NavigationView {
+            VStack {
+                ImageEditingView()
+                    .relativeSize(width: 1, height: 1)
+                ScaledImagePreviewView(image: .noSelectedImagePlaceholder)
+                    .relativeSize(width: 1, height: 1)
+            }
         }
     }
 }
@@ -21,7 +30,10 @@ struct ContentView : View {
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView().colorScheme(.dark)
+            ContentView().colorScheme(.light)
+        }
     }
 }
 #endif

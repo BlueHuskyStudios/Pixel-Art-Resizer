@@ -8,30 +8,50 @@
 
 import SwiftUI
 import UIKit
+import PixelArtKit
 
 
 
 struct GridBackgroundView : View {
     
-    @State var horizontalSpacing: CGFloat = 48
-    @State var verticalSpacing: CGFloat = 48
+    @State var spacing: CGSize = 48 * 48
     
-    @State var backgroundColor: Color = Color.primary
-    @State var foregroundColor: Color = Color.secondary
+    @State var backgroundColor = Color.gridBackground
+    @State var foregroundColor = Color.gridLines
+    
+    @State var scale: Scale2D<Length> = .unscaled
+    
+    @State var origin: CGPoint = .zero
+    
+    
+    private var horizontalSpacing: Length { spacing.width }
+    private var verticalSpacing: Length { spacing.height }
+    
+    private var scaledHorizontalSpacing: Length { self.horizontalSpacing * scale.x }
+    private var scaledVerticalSpacing: Length { self.verticalSpacing * scale.y }
     
     var body: some View {
         GeometryReader { geometry in
             Path { path in
-                let numberOfHorizontalGridLines = Int(geometry.size.height / self.horizontalSpacing)
-                let numberOfVerticalGridLines = Int(geometry.size.width / self.verticalSpacing)
+                let scaledHorizontalSpacing = self.scaledHorizontalSpacing
+                let scaledVerticalSpacing = self.scaledVerticalSpacing
+                
+                let numberOfVerticalGridLines = Int(geometry.size.width / scaledHorizontalSpacing)
+                
                 for index in 0...numberOfVerticalGridLines {
-                    let vOffset: CGFloat = CGFloat(index) * self.verticalSpacing
-                    path.move(to: CGPoint(x: vOffset, y:0))
+                    let vOffset = (Length(index) * scaledHorizontalSpacing)
+                        + (self.origin.x.truncatingRemainder(dividingBy: scaledHorizontalSpacing))
+                    path.move(to: CGPoint(x: vOffset, y: 0))
                     path.addLine(to: CGPoint(x: vOffset, y: geometry.size.height))
                 }
+                
+                
+                let numberOfHorizontalGridLines = Int(geometry.size.height / scaledVerticalSpacing)
+                
                 for index in 0...numberOfHorizontalGridLines {
-                    let hOffset: CGFloat = CGFloat(index) * self.horizontalSpacing
-                    path.move(to: CGPoint(x: 0, y:hOffset))
+                    let hOffset: Length = Length(index) * scaledVerticalSpacing
+                        + (self.origin.y.truncatingRemainder(dividingBy: scaledVerticalSpacing))
+                    path.move(to: CGPoint(x: 0, y: hOffset))
                     path.addLine(to: CGPoint(x: geometry.size.width, y: hOffset))
                 }
             }
@@ -48,6 +68,7 @@ struct GridBackgroundView_Previews : PreviewProvider {
         Group {
             GridBackgroundView().colorScheme(.dark)
             GridBackgroundView().colorScheme(.light)
+            GridBackgroundView(scale: 1.5, origin: CGPoint(x: 20, y: 50)).colorScheme(.dark)
         }
     }
 }
