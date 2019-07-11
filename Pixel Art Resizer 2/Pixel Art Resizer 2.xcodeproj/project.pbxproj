@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7738DCFB22D6A36E008D06B6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7738DCFA22D6A36E008D06B6 /* Localizable.strings */; };
 		A304234322D5555400E5CF35 /* PixelArtKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A304234222D5555400E5CF35 /* PixelArtKit.framework */; };
 		A304234422D5555400E5CF35 /* PixelArtKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A304234222D5555400E5CF35 /* PixelArtKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A30EFE0A22D4F08100785CD9 /* ImageEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30EFE0922D4F08100785CD9 /* ImageEditingView.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7738DCFA22D6A36E008D06B6 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Localization/Localizable.strings; sourceTree = "<group>"; };
 		A304234222D5555400E5CF35 /* PixelArtKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PixelArtKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30EFE0922D4F08100785CD9 /* ImageEditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditingView.swift; sourceTree = "<group>"; };
 		A30EFE0B22D4F34100785CD9 /* ScaledImagePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledImagePreviewView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7738DCF822D6A329008D06B6 /* Meta Info */ = {
+			isa = PBXGroup;
+			children = (
+				A3F1A1EA22CAD52700DC7247 /* Pixel Art Resizer 2.entitlements */,
+				A3F1A1C822CAD4A200DC7247 /* Info.plist */,
+			);
+			name = "Meta Info";
+			sourceTree = "<group>";
+		};
+		7738DCF922D6A33F008D06B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3F1A1C022CAD4A200DC7247 /* Assets.xcassets */,
+				7738DCFA22D6A36E008D06B6 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		A343064222D41C4F003D1099 /* Conveniences */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +148,7 @@
 				A37F3F4022CBBB1B0064444B /* GridBackgroundView.swift */,
 				A30EFE0922D4F08100785CD9 /* ImageEditingView.swift */,
 				A30EFE0B22D4F34100785CD9 /* ScaledImagePreviewView.swift */,
+				A3F1A1C522CAD4A200DC7247 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,13 +179,11 @@
 			children = (
 				A343064222D41C4F003D1099 /* Conveniences */,
 				A37F3F3F22CBBABB0064444B /* Views */,
-				A3F1A1EA22CAD52700DC7247 /* Pixel Art Resizer 2.entitlements */,
 				A3F1A1BA22CAD4A000DC7247 /* AppDelegate.swift */,
 				A3F1A1BC22CAD4A000DC7247 /* SceneDelegate.swift */,
 				A3F1A1BE22CAD4A000DC7247 /* ContentView.swift */,
-				A3F1A1C022CAD4A200DC7247 /* Assets.xcassets */,
-				A3F1A1C522CAD4A200DC7247 /* LaunchScreen.storyboard */,
-				A3F1A1C822CAD4A200DC7247 /* Info.plist */,
+				7738DCF922D6A33F008D06B6 /* Resources */,
+				7738DCF822D6A329008D06B6 /* Meta Info */,
 				A3F1A1C222CAD4A200DC7247 /* Preview Content */,
 			);
 			path = "Pixel Art Resizer 2";
@@ -302,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3F1A1C722CAD4A200DC7247 /* LaunchScreen.storyboard in Resources */,
+				7738DCFB22D6A36E008D06B6 /* Localizable.strings in Resources */,
 				A3F1A1C422CAD4A200DC7247 /* Preview Assets.xcassets in Resources */,
 				A3F1A1C122CAD4A200DC7247 /* Assets.xcassets in Resources */,
 			);

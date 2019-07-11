@@ -14,14 +14,14 @@ import PixelArtKit
 
 struct GridBackgroundView : View {
     
-    @State var spacing: CGSize = 48 * 48
+    var spacing: CGSize
     
-    @State var backgroundColor = Color.gridBackground
-    @State var foregroundColor = Color.gridLines
+    var backgroundColor = Color.gridBackground
+    var foregroundColor = Color.gridLines
     
-    @State var scale: Scale2D<Length> = .unscaled
+    var scale: Scale2D<Length>
     
-    @State var origin: CGPoint = .zero
+    var origin: CGPoint = .zero
     
     
     private var horizontalSpacing: Length { spacing.width }
@@ -66,9 +66,9 @@ struct GridBackgroundView : View {
 struct GridBackgroundView_Previews : PreviewProvider {
     static var previews: some View {
         Group {
-            GridBackgroundView().colorScheme(.dark)
-            GridBackgroundView().colorScheme(.light)
-            GridBackgroundView(scale: 1.5, origin: CGPoint(x: 20, y: 50)).colorScheme(.dark)
+            GridBackgroundView(spacing: 48 * 48, scale: 1).colorScheme(.dark)
+            GridBackgroundView(spacing: 48 * 48, scale: 1).colorScheme(.light)
+            GridBackgroundView(spacing: 48 * 48, scale: 1.5, origin: CGPoint(x: 20, y: 50)).colorScheme(.dark)
         }
     }
 }

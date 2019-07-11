@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Pixel Art Resizer 2
+
+  Created by Ben Leggiero @ RRD on 7/10/19.
+  Copyright © 2019 Ben Leggiero. All rights reserved.
+*/
+
+
+
+"warning.scaledImagePreview.shrinking.short" = "Image will shrink";
+"warning.scaledImagePreview.shrinking.long+scale" = "Setting the scale to %1$@ will make the image shrink";
+
+"warning.scaledImagePreview.growing.short" = "Image will grow";
+"warning.scaledImagePreview.growing.long+scale" = "Setting the scale to %1$@ will make the image larger";
+
+"warning.scaledImagePreview.unchanged.short" = "Move the slider";
+"warning.scaledImagePreview.unchanged.long+scale" = "Setting the scale to %1$@ will not change the image at all";
+
+
+"warning.scaledImagePreview.fractional.short" = "Image may be warped";
+"warning.scaledImagePreview.fractional.long+scale" = "Setting the scale to %1$@ might cause the image to be warped";

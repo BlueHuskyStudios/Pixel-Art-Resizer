@@ -7,32 +7,70 @@
 //
 
 import SwiftUI
+import PixelArtKit
+
+
 
 struct ContentView : View {
-    init() { // for navigation bar title color
-//        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.red]
-        // For navigation bar background color
-//        UINavigationBar.appearance().backgroundColor = .green
-    }
+    
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass
+    @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass
+    
+    @State var imageScale: Length = 1
+    @State var image: UIImage = .noSelectedImagePlaceholder
 
     var body: some View {
-        NavigationView {
-            VStack {
-                ImageEditingView()
-                    .relativeSize(width: 1, height: 1)
-                ScaledImagePreviewView(image: .noSelectedImagePlaceholder)
-                    .relativeSize(width: 1, height: 1)
+//        NavigationView {
+            Group {
+                if horizontalSizeClass == .compact
+                    && verticalSizeClass == .regular {
+                    VStack {
+                        imageEditingView()
+                        scaledImagePreviewView()
+                    }
+                }
+                else {
+                    HStack {
+                        imageEditingView()
+                        scaledImagePreviewView()
+                    }
+                }
             }
-        }
+            .also {
+                print(horizontalSizeClass!, verticalSizeClass!)
+            }
+            .relativeSize(width: 1, height: 1)
+//        }
+    }
+    
+    
+    private func imageEditingView() -> some View {
+        ImageEditingView(imageScale: $imageScale)
+            .relativeSize(width: 1, height: 1)
+    }
+    
+    
+    private func scaledImagePreviewView() -> some View {
+        ScaledImagePreviewView(image: image,
+                               scale: .init(proportional: imageScale))
+            .relativeSize(width: 1, height: 1)
     }
 }
+
+
+
+extension Group: HasAlso {}
+
+
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView().colorScheme(.dark)
-            ContentView().colorScheme(.light)
+            ContentView()
+                .colorScheme(.dark)
+            ContentView(imageScale: 4.5)
+                .colorScheme(.light)
         }
     }
 }

@@ -9,15 +9,20 @@
 import SwiftUI
 
 struct ImageEditingView : View {
+    
+    @State var imageScale: Binding<Length>
+    
     var body: some View {
-        Text("Image Editing View Placeholder")
+        VStack {
+            Slider(value: imageScale, from: 0.1, through: 5, by: 0.1)
+        }
     }
 }
 
 #if DEBUG
 struct ImageEditingView_Previews : PreviewProvider {
     static var previews: some View {
-        ImageEditingView()
+        ImageEditingView(imageScale: .constant(1))
     }
 }
 #endif

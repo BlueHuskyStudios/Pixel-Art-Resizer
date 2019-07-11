@@ -1,0 +1,116 @@
+{
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "colors" : [
+    {
+      "idiom" : "universal",
+      "color" : {
+        "platform" : "ios",
+        "reference" : "tertiaryLabelColor"
+      },
+      "display-gamut" : "sRGB"
+    },
+    {
+      "idiom" : "universal",
+      "color" : {
+        "platform" : "ios",
+        "reference" : "quaternaryLabelColor"
+      },
+      "display-gamut" : "sRGB"
+    },
+    {
+      "idiom" : "universal",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "display-gamut" : "sRGB",
+      "color" : {
+        "platform" : "ios",
+        "reference" : "tertiaryLabelColor"
+      }
+    },
+    {
+      "idiom" : "universal",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "display-gamut" : "sRGB",
+      "color" : {
+        "platform" : "ios",
+        "reference" : "quaternaryLabelColor"
+      }
+    },
+    {
+      "idiom" : "universal",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "display-gamut" : "sRGB",
+      "color" : {
+        "platform" : "ios",
+        "reference" : "tertiaryLabelColor"
+      }
+    },
+    {
+      "idiom" : "universal",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "display-gamut" : "sRGB",
+      "color" : {
+        "platform" : "ios",
+        "reference" : "quaternaryLabelColor"
+      }
+    },
+    {
+      "idiom" : "universal",
+      "color" : {
+        "platform" : "ios",
+        "reference" : "tertiaryLabelColor"
+      },
+      "display-gamut" : "display-P3"
+    },
+    {
+      "idiom" : "universal",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "display-gamut" : "display-P3",
+      "color" : {
+        "platform" : "ios",
+        "reference" : "tertiaryLabelColor"
+      }
+    },
+    {
+      "idiom" : "universal",
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "display-gamut" : "display-P3",
+      "color" : {
+        "platform" : "ios",
+        "reference" : "tertiaryLabelColor"
+      }
+    }
+  ]
+}
